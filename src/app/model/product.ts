@@ -1,7 +1,8 @@
 export class Product {
   id: number = 0;
   catId: number = 0;
-  name: string = '';
+  author: string ='';
+  title: string = '';
   description: string = '';
   image: string = '';
   price: number = 0;
