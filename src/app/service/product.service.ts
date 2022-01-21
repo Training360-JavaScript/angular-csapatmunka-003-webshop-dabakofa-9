@@ -6,7 +6,7 @@ import { Product } from '../model/product';
 })
 export class ProductService {
 
-  productList: Product[] =  [
+  list: Product[] =  [
     {
     id: 1,
     catId: 1,
@@ -733,6 +733,6 @@ export class ProductService {
   constructor() { }
 
   getAll(): Product[] {
-    return this.productList;
+    return this.list;
   }
 }
