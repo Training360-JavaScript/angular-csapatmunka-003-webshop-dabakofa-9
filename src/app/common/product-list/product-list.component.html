@@ -2,7 +2,7 @@
   <div class="row">
     <input [(ngModel)]="phrase" type="text" class="form-control">
     <table>
-      <tr *ngFor="let product of products | filter:phrase">
+      <tr *ngFor="let product of products | filter:phrase:'title'">
         <app-product-card
             [product] = "product"
         ></app-product-card>

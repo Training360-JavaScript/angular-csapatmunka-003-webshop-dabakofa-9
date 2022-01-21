@@ -1,1 +1,8 @@
-<p>cat01 works!</p>
+
+<!-- Ide jön a terméklapozó - a kiemelt terméksorral -->
+
+<div class="row">
+  <app-product-list
+    [products]="products | filter: '1':'catId'"
+  ></app-product-list>
+</div>
