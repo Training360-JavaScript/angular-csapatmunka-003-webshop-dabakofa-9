@@ -16,7 +16,7 @@ export class ProductService {
     image: 'src/assets/covers/8307105_5.jpg',
     price: 2999,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -52,7 +52,7 @@ export class ProductService {
     image: 'src/assets/covers/8278801_5.jpg',
     price: 4790,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -112,7 +112,7 @@ export class ProductService {
     image: 'src/assets/covers/871389_5.jpg',
     price: 2990,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -136,7 +136,7 @@ export class ProductService {
     image: 'src/assets/covers/8147390_5.jpg',
     price: 3899,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -148,7 +148,7 @@ export class ProductService {
     image: 'src/assets/covers/7935525_5.jpg',
     price: 2490,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -172,7 +172,7 @@ export class ProductService {
     image: 'src/assets/covers/7925996_5.jpg',
     price: 2490,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -184,7 +184,7 @@ export class ProductService {
     image: 'src/assets/covers/7906411_5.jpg',
     price: 4699,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -280,7 +280,7 @@ export class ProductService {
   image: 'src/assets/covers/8278988_5.jpg',
   price: 4500,
   stock: 10,
-  featured: false,
+  featured: true,
   active: true,
  },
 {
@@ -304,7 +304,7 @@ export class ProductService {
   image: 'src/assets/covers/4544815_5.jpg',
   price: 3999,
   stock: 10,
-  featured: false,
+  featured: true,
   active: true,
  },
 {
@@ -316,7 +316,7 @@ export class ProductService {
   image: 'src/assets/covers/4477983_5.jpg',
   price: 6990,
   stock: 10,
-  featured: false,
+  featured: true,
   active: true,
  },
 {
@@ -364,7 +364,7 @@ export class ProductService {
   image: 'src/assets/covers/7822150_5.jpg',
   price: 4990,
   stock: 10,
-  featured: false,
+  featured: true,
   active: true,
  },
 {
@@ -400,7 +400,7 @@ export class ProductService {
   image: 'src/assets/covers/7811176_5.jpg',
   price: 3990,
   stock: 10,
-  featured: false,
+  featured: true,
   active: true,
  },
 {
@@ -412,7 +412,7 @@ export class ProductService {
   image: 'src/assets/covers/7792300_5.jpg',
   price: 3990,
   stock: 10,
-  featured: false,
+  featured: true,
   active: true,
  },
 {
@@ -436,7 +436,7 @@ export class ProductService {
   image: 'src/assets/covers/6709774_5.jpg',
   price: 3790,
   stock: 10,
-  featured: false,
+  featured: true,
   active: true,
  },
 {
@@ -460,7 +460,7 @@ export class ProductService {
   image: 'src/assets/covers/6708925_5.jpg',
   price: 4990,
   stock: 10,
-  featured: false,
+  featured: true,
   active: true,
  },
 {
@@ -496,7 +496,7 @@ export class ProductService {
     image: 'src/assets/covers/8194570_5.jpg',
     price: 9490,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -520,7 +520,7 @@ export class ProductService {
     image: 'src/assets/covers/7871808_5.jpg',
     price: 2299,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -544,7 +544,7 @@ export class ProductService {
     image: 'src/assets/covers/5874518_5.jpg',
     price: 6990,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -568,7 +568,7 @@ export class ProductService {
     image: 'src/assets/covers/2765380_5.jpg',
     price: 4950,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -592,7 +592,7 @@ export class ProductService {
     image: 'src/assets/covers/6155591_5.jpg',
     price: 3990,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -628,7 +628,7 @@ export class ProductService {
     image: 'src/assets/covers/5877757_5.jpg',
     price: 1990,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -652,7 +652,7 @@ export class ProductService {
     image: 'src/assets/covers/4670473_5.jpg',
     price: 9990,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -676,7 +676,7 @@ export class ProductService {
     image: 'src/assets/covers/4017754_5.jpg',
     price: 3990,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
@@ -700,7 +700,7 @@ export class ProductService {
     image: 'src/assets/covers/7962525_5.jpg',
     price: 4590,
     stock: 10,
-    featured: false,
+    featured: true,
     active: true,
    },
   {
