@@ -1,5 +1,5 @@
 <div class="card" style="width: 18rem;">
-  <img [attr.src]="imageWithPath" class="card-img-top" alt="...">
+  <img [attr.src]="product.image" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{ product.title }}</h5>
     <p class="card-text">{{ product.description | slice:0:textLength }}...</p>

@@ -12,13 +12,11 @@ export class ProductCardComponent implements OnInit {
   @Input() textLength: number = 300;
 
   buttonText: string = 'Megnéz';
-  path: string = './../../assets/covers/';
   imageWithPath:string = '';
 
   constructor() { }
 
   ngOnInit(): void {
-    this.imageWithPath = this.path+this.product.image;
   }
 
 }
