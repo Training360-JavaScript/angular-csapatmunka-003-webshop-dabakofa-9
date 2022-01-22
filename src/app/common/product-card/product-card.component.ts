@@ -9,6 +9,8 @@ import { Product } from '../../model/product';
 export class ProductCardComponent implements OnInit {
 
   @Input() product: Product = new Product();
+  @Input() textLength: number = 300;
+
   buttonText: string = 'Megnéz';
   path: string = './../../assets/covers/';
   imageWithPath:string = '';

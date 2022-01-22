@@ -2,7 +2,7 @@
   <img [attr.src]="imageWithPath" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{ product.title }}</h5>
-    <p class="card-text">{{ product.description | slice:0:300 }}...</p>
+    <p class="card-text">{{ product.description | slice:0:textLength }}...</p>
     <a href="#" class="btn btn-primary">{{ buttonText }}</a>
   </div>
 </div>
