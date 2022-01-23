@@ -1,6 +1,12 @@
-<div>
-  <input [(ngModel)]="phrase" type="text" class="form-control" />
+<div class="search-field">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Mi érdekli?</span>
+    </div>
+    <input [(ngModel)]="phrase" type="text" class="form-control" name="search-field"/>
+  </div>
 </div>
+
 <div class="container">
   <div class="row row-cols-xs-1 row-cols-sm-2 row-cols-md-5">
 

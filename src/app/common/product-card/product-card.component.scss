@@ -1,3 +1,27 @@
+
 .products{
   width: 100%;
+}
+
+.card {
+  min-height: 100%;
+}
+
+.card .card-img-top {
+  max-height: 19em;
+  object-fit: contain;
+  object-position: top;
+}
+
+.card .card-text {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+@media screen and (max-width: 575.9px) {
+  .card .card-img-top {
+    object-fit: initial;
+    max-height: initial;
+    padding: 1em;
+  }
 }
