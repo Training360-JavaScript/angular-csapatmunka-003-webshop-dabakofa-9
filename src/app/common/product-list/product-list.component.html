@@ -1,8 +1,11 @@
 <div>
   <input [(ngModel)]="phrase" type="text" class="form-control" />
 </div>
-<div class="flex-container">
-  <div class="products" *ngFor="let product of products | filter: phrase:'title'">
-    <app-product-card [product]="product"></app-product-card>
+<div class="container">
+  <div class="row row-cols-xs-1 row-cols-sm-2 row-cols-md-5">
+
+    <div class="products" *ngFor="let product of products | filter: phrase:'title'">
+      <app-product-card [product]="product"></app-product-card>
+    </div>
   </div>
 </div>
