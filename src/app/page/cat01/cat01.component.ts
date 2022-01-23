@@ -9,9 +9,11 @@ import { Product } from 'src/app/model/product';
 })
 export class Cat01Component implements OnInit {
     products: Product[]
+    highlighted: Product[];
 
   constructor( private productService: ProductService) {
-      this.products = productService.getAll()
+      this.products = productService.getAll();
+      this.highlighted = this.products.slice();
   }
 
   ngOnInit(): void {

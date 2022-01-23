@@ -8,8 +8,8 @@ import { Component, Input, OnInit} from '@angular/core';
 })
 export class ProductListComponent implements OnInit {
 
-@Input() products: Product[] = []
-  public phrase: string = ''
+@Input() products: Product[] = [];
+  public phrase: string = '';
 
   constructor() {
   }
