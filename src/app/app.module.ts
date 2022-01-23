@@ -13,6 +13,10 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
 import { ProductListComponent } from './common/product-list/product-list.component';
 
 import { FilterPipe } from './pipe/filter.pipe';
+import { FeaturedPipe } from './pipe/featured.pipe';
+import { RandomPipe } from './pipe/random.pipe';
+import { FirstFewPipe } from './pipe/first-few.pipe';
+import { ProductBlockComponent } from './common/product-block/product-block.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,10 @@ import { FilterPipe } from './pipe/filter.pipe';
     ProductListComponent,
     ProductCardComponent,
     FilterPipe,
+    FeaturedPipe,
+    RandomPipe,
+    FirstFewPipe,
+    ProductBlockComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,15 @@
 
-<!-- Ide jön a terméklapozó - a kiemelt terméksorral -->
+<div>
+  <span>
+    <h5>
+      Kiemelt ajánlataink
+    </h5>
+  </span>
+  <app-product-block [products]="highlighted | random | filter: '1':'catId' | firstFew:5 "></app-product-block>
+</div>
 
 <div class="row">
   <app-product-list
-    [products]="products | filter: '1':'catId'"
+    [products]="products |  filter: '1':'catId' "
   ></app-product-list>
 </div>

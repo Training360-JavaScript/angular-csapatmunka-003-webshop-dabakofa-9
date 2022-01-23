@@ -8,10 +8,12 @@ import { Product } from 'src/app/model/product';
   styleUrls: ['./cat02.component.scss'],
 })
 export class Cat02Component implements OnInit {
-  products: Product[];
+  products: Product[]
+  highlighted: Product[];
 
-  constructor(private productService: ProductService) {
+constructor( private productService: ProductService) {
     this.products = productService.getAll();
+    this.highlighted = this.products.slice();
   }
 
   ngOnInit(): void {}
