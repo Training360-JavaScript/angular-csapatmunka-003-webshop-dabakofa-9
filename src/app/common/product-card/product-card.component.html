@@ -2,9 +2,11 @@
   <img [attr.src]="product.image" class="card-img-top" [attr.alt]="product.title">
   <div class="card-body">
     <h5 class="card-title">{{ product.title }}</h5>
-    <p class="card-text"><strong>Leírás: </strong>{{ product.description | slice:0:textLength }}...</p>
-    <p class="card-data"><strong>Készlet: </strong>{{ product.stock }} db</p>
-    <p class="card-data"><strong>Ár: </strong>{{ product.price | currency:'HUF':'symbol':'2.0-0'}}</p>
+    <p class="card-text">Leírás: {{ product.description | slice:0:textLength }}...</p>
+  </div>
+  <div class="card-footer">
+    <p class="card-text">Készlet: {{ product.stock }} db</p>
+    <p class="card-text">Ár: {{ product.price | currency:'HUF':'symbol':'2.0-0'}}</p>
     <a href="#" class="btn btn-primary">{{ buttonText }}</a>
   </div>
 </div>
