@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/model/product';
 
 @Component({
-  selector: 'app-cat02',
-  templateUrl: './cat02.component.html',
-  styleUrls: ['./cat02.component.scss'],
+  selector: 'app-cat03',
+  templateUrl: './cat03.component.html',
+  styleUrls: ['./cat03.component.scss'],
 })
-export class Cat02Component implements OnInit {
+export class Cat03Component implements OnInit {
   products: Product[];
 
   constructor(private productService: ProductService) {
