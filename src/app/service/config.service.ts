@@ -15,9 +15,9 @@ export class ConfigService {
 
   menuItems: IMenuItem[] = [
     {text: 'Kezdőlap', link: '/', icon: 'home'},
-    {text: 'Ifjúsági', link: '/ifjusagi'},
-    {text: 'Kortárs', link: '/kortars'},
-    {text: 'Útikönyvek', link: '/utikonyvek'},
+    {text: 'Ifjúsági', link: '/kategoria/1'},
+    {text: 'Kortárs', link: '/kategoria/2'},
+    {text: 'Útikönyvek', link: '/kategoria/3'},
   ];
 
   constructor() { }

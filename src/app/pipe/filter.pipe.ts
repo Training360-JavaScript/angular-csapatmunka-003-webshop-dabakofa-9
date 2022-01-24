@@ -3,8 +3,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'filter',
 })
-export class FilterPipe implements PipeTransform {
-  transform(value: any[], phrase: string, key: string = ''): any {
+export class FilterPipe<T> implements PipeTransform {
+  transform(value: T[], phrase: string, key: string = ''): T[] {
     if (!Array.isArray(value) || !phrase || !key) return value
     return value.filter(
       item => {

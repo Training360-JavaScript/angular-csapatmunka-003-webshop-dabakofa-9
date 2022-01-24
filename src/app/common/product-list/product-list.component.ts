@@ -9,12 +9,19 @@ import { Component, Input, OnInit} from '@angular/core';
 export class ProductListComponent implements OnInit {
 
 @Input() products: Product[] = [];
+  filterKey: string = 'title';
   public phrase: string = '';
+  sort: string = 'id';
+  descendingOrder: boolean = false;
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  onOrderDirectionChange(){
+    this.descendingOrder = !this.descendingOrder
   }
 
 }
