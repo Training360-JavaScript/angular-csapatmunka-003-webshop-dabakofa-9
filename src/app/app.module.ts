@@ -15,6 +15,7 @@ import { RandomPipe } from './pipe/random.pipe';
 import { FirstFewPipe } from './pipe/first-few.pipe';
 import { ProductBlockComponent } from './common/product-block/product-block.component';
 import { CategoryComponent } from './page/category/category.component';
+import { SorterPipe } from './pipe/sorter.pipe';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CategoryComponent } from './page/category/category.component';
     FirstFewPipe,
     ProductBlockComponent,
     CategoryComponent,
+    SorterPipe,
   ],
   imports: [
     BrowserModule,

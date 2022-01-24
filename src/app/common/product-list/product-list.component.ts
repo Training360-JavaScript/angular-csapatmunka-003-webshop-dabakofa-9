@@ -10,11 +10,17 @@ export class ProductListComponent implements OnInit {
 
 @Input() products: Product[] = [];
   public phrase: string = '';
+  sort: string = 'id';
+  descendingOrder: boolean = false;
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  onOrderDirectionChange(){
+    this.descendingOrder = !this.descendingOrder
   }
 
 }
