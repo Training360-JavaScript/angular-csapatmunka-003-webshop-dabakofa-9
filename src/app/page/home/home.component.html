@@ -1,22 +1,28 @@
-<div class="container">
+<div class="content">
   <div class="row">
-    <div>
-      <h4>Üdvözöljük az {{ configService.appName }} webáruházban!</h4>
+    <div class="header">
+      <h4>
+        Üdvözöljük a <strong>{{ configService.appName }}</strong> webáruházában!
+      </h4>
     </div>
-    <div>
+    <div class="featured">
+      <span>
+        <h5>Kiemelt ajánlataink</h5>
+      </span>
+      <app-product-block
+        [products]="products | random | featured | firstFew: 5"
+      ></app-product-block>
+    </div>
+    <div class="onsale">
       <span>
         <h5>
-          Kiemelt ajánlataink
+          Akciós könyvek
+          <span class="badge badge-success ml-3">{{ this.discount }}%</span>
         </h5>
       </span>
-      <app-product-block [products]="products | random | featured | firstFew:5 "></app-product-block>
-    </div>
-    <div><span>
-      <h5>
-        Akciós könyvek
-      </h5>
-      </span>
-      <app-product-block [products]="products | random | firstFew:5 "></app-product-block>
+      <app-product-block
+        [products]="products | random | firstFew: 5"
+      ></app-product-block>
     </div>
   </div>
 </div>

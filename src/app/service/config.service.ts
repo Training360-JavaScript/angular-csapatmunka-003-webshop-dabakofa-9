@@ -11,7 +11,7 @@ export interface IMenuItem {
 })
 export class ConfigService {
 
-  appName: string = 'DáBaKoFa könvesbolt';
+  appName: string = 'DáBaKoFa könyvesbolt';
 
   menuItems: IMenuItem[] = [
     {text: 'Kezdőlap', link: '/', icon: 'home'},
