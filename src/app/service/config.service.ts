@@ -11,12 +11,13 @@ export interface IMenuItem {
 })
 export class ConfigService {
 
-  appName: string = 'Sample Webshop';
+  appName: string = 'DáBaKoFa könvesbolt';
 
   menuItems: IMenuItem[] = [
-    {text: 'Home', link: '/', icon: 'home'},
-    {text: 'Category01', link: '/cat01'},
-    {text: 'Category02', link: '/cat02'},
+    {text: 'Kezdőlap', link: '/', icon: 'home'},
+    {text: 'Ifjúsági', link: '/kategoria/1'},
+    {text: 'Kortárs', link: '/kategoria/2'},
+    {text: 'Útikönyvek', link: '/kategoria/3'},
   ];
 
   constructor() { }

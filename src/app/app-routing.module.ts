@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { Cat01Component } from './page/cat01/cat01.component';
-import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
+import {CategoryComponent} from "./page/category/category.component";
 
 const routes: Routes = [
   {
@@ -10,12 +9,8 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'cat01',
-    component: Cat01Component,
-  },
-  {
-    path: 'cat02',
-    component: Cat02Component,
+    path: "kategoria/:categoryId",
+    component: CategoryComponent,
   },
   {
     path: '**',
