@@ -20,7 +20,7 @@
     id="navbarSupportedContent"
   >
     <ul class="navbar-nav mr-auto">
-      <li *ngFor="let item of menuItems" class="nav-item">
+      <li *ngFor="let item of menuItems$ | async" class="nav-item">
         <a
           class="nav-link text-black"
           [routerLink]="item.link"
