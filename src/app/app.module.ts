@@ -16,6 +16,7 @@ import { FirstFewPipe } from './pipe/first-few.pipe';
 import { ProductBlockComponent } from './common/product-block/product-block.component';
 import { CategoryComponent } from './page/category/category.component';
 import { SorterPipe } from './pipe/sorter.pipe';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SorterPipe } from './pipe/sorter.pipe';
     SorterPipe,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule

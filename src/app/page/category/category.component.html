@@ -7,13 +7,13 @@
       <h5>Kiemelt ajánlataink</h5>
     </span>
     <app-product-block
-      [products]="highlighted | random | filter: categoryId:'catId' | firstFew: 5"
+      [products]="products$ | async | random | filter: categoryId:'catId' | firstFew: 5"
     ></app-product-block>
   </div>
 
   <div class="row productlist">
     <app-product-list
-      [products]="products | filter: categoryId:'catId'"
+      [products]="products$ | async | filter: categoryId:'catId'"
     ></app-product-list>
   </div>
 </div>

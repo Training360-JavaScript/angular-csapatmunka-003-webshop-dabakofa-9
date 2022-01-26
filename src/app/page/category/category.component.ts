@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../model/product';
 import { ProductService } from '../../service/product.service';
 import { ActivatedRoute } from '@angular/router';
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-category',
@@ -9,8 +10,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./category.component.scss'],
 })
 export class CategoryComponent implements OnInit {
-  products: Product[];
-  highlighted: Product[];
+  products$: Observable<Product[]>;
   categoryId: string = '1';
   categoryName: string = '';
 
@@ -18,8 +18,7 @@ export class CategoryComponent implements OnInit {
     private productService: ProductService,
     private ar: ActivatedRoute
   ) {
-    this.products = productService.getAll();
-    this.highlighted = this.products.slice();
+    this.products$ = productService.getAll();
     this.ar.params.subscribe((params) => {
       this.categoryId = params['categoryId'];
       this.categoryName = this.productService.getCategoryNameById(

@@ -13,7 +13,6 @@ export class SorterPipe<T> implements PipeTransform {
    * @returns {T[]} - a kulcs alapján rendezett tömb
    */
   transform(value: T[], key: string, desc: boolean = false): T[] {
-    console.log(key, desc);
     if (Array.isArray(value) !== true || typeof key !== "string") {
       return value;
     }
@@ -29,7 +28,6 @@ export class SorterPipe<T> implements PipeTransform {
       }
       // Hogyha fordított sorrend kell, akkor felcseréljük a paraméterek sorrendejét az összehasonlításnál
       if (desc) {
-        console.log("megfut");
         [comparableA, comparableB] = [comparableB, comparableA];
       }
 
