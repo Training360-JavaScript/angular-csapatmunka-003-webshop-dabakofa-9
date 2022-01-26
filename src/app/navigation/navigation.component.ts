@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ConfigService, IMenuItem } from '../service/config.service';
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-navigation',
@@ -9,7 +10,7 @@ import { ConfigService, IMenuItem } from '../service/config.service';
 export class NavigationComponent implements OnInit {
 
   appName: string = this.config.appName;
-  menuItems: IMenuItem[] = this.config.menuItems;
+  menuItems$: Observable<IMenuItem[]> = this.config.getAllMenuItems();
 
   constructor(
     private config: ConfigService,

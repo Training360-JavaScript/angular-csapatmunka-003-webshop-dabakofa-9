@@ -10,6 +10,7 @@ export class ProductCardComponent implements OnInit {
 
   @Input() product: Product = new Product();
   @Input() textLength: number = 300;
+  @Input() featured: boolean = false;
 
   buttonText: string = 'Megnéz';
   imageWithPath:string = '';

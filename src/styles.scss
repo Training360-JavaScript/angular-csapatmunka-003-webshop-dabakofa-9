@@ -1,2 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@use "colors";
 
+.btn-primary {
+  color: colors.$dark!important;
+  background-color: colors.$secondary!important;
+  border-color: colors.$primary!important;
+}
