@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { map, Observable } from "rxjs";
+import { CategoryService } from "./category.service";
 
 export interface IMenuItem {
   text: string;
@@ -11,14 +13,23 @@ export interface IMenuItem {
 })
 export class ConfigService {
 
-  appName: string = 'DáBaKoFa könvesbolt';
+  appName: string = 'DáBaKoFa könyvesbolt';
 
-  menuItems: IMenuItem[] = [
+  defaultMenuItems: IMenuItem[] = [
     {text: 'Kezdőlap', link: '/', icon: 'home'},
-    {text: 'Ifjúsági', link: '/kategoria/1'},
-    {text: 'Kortárs', link: '/kategoria/2'},
-    {text: 'Útikönyvek', link: '/kategoria/3'},
-  ];
+  ]
 
-  constructor() { }
+  constructor(private categoryService: CategoryService) { }
+
+  getAllMenuItems(): Observable<IMenuItem[]>{
+    return this.categoryService.getAll().pipe(
+      map(result => {
+        const categoryMenuItems: IMenuItem[] = [];
+        for (const category of result) {
+          categoryMenuItems.push({text: category.name, link: `/kategoria/${category.id}`})
+        }
+        return this.defaultMenuItems.concat(categoryMenuItems)
+      })
+    )
+  }
 }

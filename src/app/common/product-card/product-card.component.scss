@@ -1,3 +1,4 @@
+@use "../../../colors";
 
 .products{
   width: 100%;
@@ -5,6 +6,20 @@
 
 .card {
   min-height: 100%;
+  background-color: rgba(255,255,255, 0.7)!important;
+}
+
+.card::after {
+  padding-bottom: 4em!important;
+  margin-bottom: 4em;
+}
+
+.card.featured {
+  border: 0!important;
+  padding-bottom: 0em!important;
+  .card-footer {
+    border-top: 0!important;
+  }
 }
 
 .card .card-img-top {
