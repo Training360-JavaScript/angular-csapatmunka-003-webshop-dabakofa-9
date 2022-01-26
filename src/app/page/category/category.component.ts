@@ -3,6 +3,8 @@ import { Product } from '../../model/product';
 import { ProductService } from '../../service/product.service';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from "rxjs";
+import { Category } from "../../model/category";
+import { CategoryService } from "../../service/category.service";
 
 @Component({
   selector: 'app-category',
@@ -11,19 +13,18 @@ import { Observable } from "rxjs";
 })
 export class CategoryComponent implements OnInit {
   products$: Observable<Product[]>;
+  currentCategory$: Observable<Category>;
   categoryId: string = '1';
-  categoryName: string = '';
 
   constructor(
     private productService: ProductService,
+    private categoryService: CategoryService,
     private ar: ActivatedRoute
   ) {
     this.products$ = productService.getAll();
     this.ar.params.subscribe((params) => {
       this.categoryId = params['categoryId'];
-      this.categoryName = this.productService.getCategoryNameById(
-        Number.parseFloat(this.categoryId)
-      );
+      this.currentCategory$ = categoryService.getOne(this.categoryId);
     });
   }
 

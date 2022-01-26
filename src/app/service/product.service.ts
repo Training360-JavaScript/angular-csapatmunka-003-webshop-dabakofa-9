@@ -10,29 +10,15 @@ import { environment } from "../../environments/environment";
 })
 export class ProductService {
 
-  BASE_URL = `${environment.apiUrl}products/`
+  BASE_URL = `${environment.apiUrl}products/`;
 
   httpOptions = {
     headers: new HttpHeaders(
       {'Content-Type': 'application/json'}
     )
-  }
-
-  categories: Category[] = [
-    { id: 1, name: 'Ifjúsági', description: '' },
-    { id: 2, name: 'Kortárs', description: '' },
-    { id: 3, name: 'Útikönyvek', description: '' },
-  ];
+  };
 
   constructor(private http: HttpClient) {}
-
-  getCategoryNameById(id: number) {
-    let name = '';
-    this.categories.forEach((category) => {
-      if (category.id == id) name = category.name;
-    });
-    return name;
-  }
 
   getAll(): Observable<Product[]> {
     return this.http.get<Product[]>(this.BASE_URL);

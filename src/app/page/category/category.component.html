@@ -1,7 +1,8 @@
 <div class="content">
   <div class="row featured">
     <div class="category-header">
-      <h4>{{ categoryName }} kategória</h4>
+      <!--Az egyszerűség kedvéért mondjuk azt, hogy a ? miatt nem értékelődik a teljes kifejezés addig ameddig zárójeles kifejezés null -->
+      <h4>{{ (currentCategory$ | async)?.name }} kategória</h4>
     </div>
     <span>
       <h5>Kiemelt ajánlataink</h5>
