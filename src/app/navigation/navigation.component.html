@@ -10,9 +10,6 @@
       <li *ngFor="let item of menuItems$ | async" class="nav-item">
         <a class="nav-link text-black" [routerLink]="item.link">{{ item.text }}</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-black" routerLink="/admin">Admin</a>
-      </li>
     </ul>
   </div>
 </nav>

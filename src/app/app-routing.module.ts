@@ -10,6 +10,10 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: "kategoria/:categoryId",
+    component: CategoryComponent,
+  },
+  {
     path: 'admin',
     component: AdminComponent,
   },

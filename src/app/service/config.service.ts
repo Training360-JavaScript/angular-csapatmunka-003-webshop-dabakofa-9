@@ -17,6 +17,7 @@ export class ConfigService {
 
   defaultMenuItems: IMenuItem[] = [
     {text: 'Kezdőlap', link: '/', icon: 'home'},
+    {text: 'Admin', link: '/admin', icon: 'home'},
   ]
 
   constructor(private categoryService: CategoryService) { }
