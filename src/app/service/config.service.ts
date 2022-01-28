@@ -17,6 +17,9 @@ export class ConfigService {
 
   defaultMenuItems: IMenuItem[] = [
     {text: 'Kezdőlap', link: '/', icon: 'home'},
+  ]
+
+  appendMenuItems: IMenuItem[] = [
     {text: 'Admin', link: '/admin', icon: 'home'},
   ]
 
@@ -29,7 +32,7 @@ export class ConfigService {
         for (const category of result) {
           categoryMenuItems.push({text: category.name, link: `/kategoria/${category.id}`})
         }
-        return this.defaultMenuItems.concat(categoryMenuItems)
+        return this.defaultMenuItems.concat(categoryMenuItems).concat(this.appendMenuItems);
       })
     )
   }
