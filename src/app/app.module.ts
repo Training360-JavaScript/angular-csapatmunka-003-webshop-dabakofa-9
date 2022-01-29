@@ -17,6 +17,7 @@ import { ProductBlockComponent } from './common/product-block/product-block.comp
 import { CategoryComponent } from './page/category/category.component';
 import { SorterPipe } from './pipe/sorter.pipe';
 import { HttpClientModule } from "@angular/common/http";
+import { AdminComponent } from './page/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { HttpClientModule } from "@angular/common/http";
     ProductBlockComponent,
     CategoryComponent,
     SorterPipe,
+    AdminComponent,
   ],
   imports: [
     HttpClientModule,
