@@ -1,45 +1,45 @@
-<tr class="row">
+<tr class="row data-main">
   <td class="col-md-1">
     <input
       readonly
-      class="text-muted"
+      class="text-muted select-none form-control"
       [(ngModel)]="product.id"
       name="id"
       type="text"
-      editable="false"
     />
   </td>
   <td class="col-md-1">
-    <input [(ngModel)]="product.catId" name="catId" type="text" />
+    <input [(ngModel)]="product.catId" name="catId" type="text" class="form-control"/>
   </td>
   <td class="col-md-2">
-    <input [(ngModel)]="product.author" name="author" type="text" />
+    <input [(ngModel)]="product.author" name="author" type="text" class="form-control"/>
   </td>
-  <td class="col-md-3">
-    <input [(ngModel)]="product.title" name="title" type="text" />
-  </td>
-  <td class="col-md-1">
-    <input [(ngModel)]="product.price" name="price" type="text" />
+  <td class="col-md-4">
+    <input [(ngModel)]="product.title" name="title" type="text" class="form-control"/>
   </td>
   <td class="col-md-1">
-    <input [(ngModel)]="product.stock" name="stock" type="text" />
+    <input [(ngModel)]="product.price" name="price" type="text" class="form-control"/>
   </td>
   <td class="col-md-1">
-    <input [(ngModel)]="product.featured" name="featured" type="text" />
+    <input [(ngModel)]="product.stock" name="stock" type="text" class="form-control"/>
+  </td>
+  <td class="col-md-1">
+    <input [(ngModel)]="product.featured" name="featured" type="text" class="form-control"/>
   </td>
 </tr>
-<tr class="row">
-  <td class="col-md-6">
+<tr class="row data-extra">
+  <td class="col-md-7 offset-md-1">
     <textarea
       [(ngModel)]="product.description"
       name="description"
       type="text"
-    ></textarea>
-  </td>
-  <td class="col-md-3">
-    <input [(ngModel)]="product.image" name="image" type="text" />
-  </td>
-  <td class="col-md-3">
-    <app-button-block></app-button-block>
-  </td>
+      class="form-control"
+      ></textarea>
+    </td>
+    <td class="col-md-2">
+      <app-button-block [product] = "product"></app-button-block>
+    </td>
+    <td class="col-md-6 offset-2">
+      <input [(ngModel)]="product.image" name="image" type="text" class="form-control"/>
+    </td>
 </tr>

@@ -12,8 +12,8 @@
           class="custom-select"
           id="sortFilterKeySelect"
         >
-          <option value="title">Név</option>
-          <option value="author">Szerző</option>
+        <option value="author">Szerző</option>
+        <option value="title">Cím</option>
           <option value="description">Leírás</option>
         </select>
       </div>
@@ -30,19 +30,31 @@
       </div>
     </div>
 
-    <table>
-      <thead>
-        <tr class="row">
-          <th class="col-1" *ngFor="let key of keys">
-            {{ key }}
-          </th>
-        </tr>
-      </thead>
-      <tbody class="row">
-        <div class="products" *ngFor="let product of products$ | async">
-          <app-data-block [product]="product" [keys]="keys"></app-data-block>
-        </div>
-      </tbody>
-    </table>
+    <div class="container">
+      error:
+      {{ productService.errorMessage }}
+      <table class="table">
+        <thead>
+          <tr class="row">
+            <!-- <th class="col-1" *ngFor="let key of keys"></th> -->
+            <th class="col-md-1">id</th>
+            <th class="col-md-1">catId</th>
+            <th class="col-md-2">szerző</th>
+            <th class="col-md-4">cím</th>
+            <th class="col-md-1">ár</th>
+            <th class="col-md-1">db</th>
+            <th class="col-md-1">kiemelt</th>
+          </tr>
+        </thead>
+        <tbody class="row">
+          <div
+            class="products"
+            *ngFor="let product of products$ | async | filter: phrase:filterKey"
+          >
+            <app-data-block [product]="product" [keys]="keys"></app-data-block>
+          </div>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
