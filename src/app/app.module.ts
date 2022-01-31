@@ -18,6 +18,9 @@ import { CategoryComponent } from './page/category/category.component';
 import { SorterPipe } from './pipe/sorter.pipe';
 import { HttpClientModule } from "@angular/common/http";
 import { AdminComponent } from './page/admin/admin.component';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
+import { DataBlockComponent } from './common/data-block/data-block.component';
+import { ButtonBlockComponent } from './common/button-block/button-block.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { AdminComponent } from './page/admin/admin.component';
     CategoryComponent,
     SorterPipe,
     AdminComponent,
+    DataEditorComponent,
+    DataBlockComponent,
+    ButtonBlockComponent,
   ],
   imports: [
     HttpClientModule,
