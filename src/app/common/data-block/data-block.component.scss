@@ -1,5 +1,10 @@
-input.select-none {
+@use "../../../colors.scss";
+
+input.form-control[readonly],
+textarea.form-control[readonly] {
   user-select: none!important;
+  color: grey!important;
+  background-color: colors.$white;
 }
 
 textarea {

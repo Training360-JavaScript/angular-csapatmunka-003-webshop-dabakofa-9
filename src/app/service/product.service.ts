@@ -35,8 +35,6 @@ export class ProductService {
   updateOne(product: Product): Observable<any>{
     //A json server Elméletileg lekezeli, hogyha a id nélkül küldöd rá a módosítást, de nem szép dolog
     const id: number = product.id
-    console.log('updating ' + id);
-    console.log('url ' + `${this.BASE_URL}${id}`, product, this.httpOptions);
     return this.http.put(`${this.BASE_URL}${id}`, product, this.httpOptions);
   }
 
