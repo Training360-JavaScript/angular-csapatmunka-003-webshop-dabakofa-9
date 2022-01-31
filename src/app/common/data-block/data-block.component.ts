@@ -11,10 +11,16 @@ export class DataBlockComponent implements OnInit {
   @Input() keys: string[] = [];
   @Output() itemDeleted = new EventEmitter();
 
-  isAlertVisible = false;
-  alertMessage = '';
+  isAlertVisible: boolean = false;
+  alertMessage: string = '';
   alertDismiss: any;
-  editable = true
+  editable: boolean = true;
+  categories: any[] = [
+    {name:'-',id:0},
+    {name:'ifjusági', id:1},
+    {name:'kortárs',id:2},
+    {name:'útikönyv',id:3}
+  ];
 
   constructor() {}
 
@@ -29,6 +35,7 @@ export class DataBlockComponent implements OnInit {
 
   onUpdate(event: Event) {
     this.showAlert(`Termék frissítve`, 3000);
+    console.log(event);
   }
 
   onDelete(event: Event) {
