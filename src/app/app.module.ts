@@ -21,6 +21,7 @@ import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 import { DataBlockComponent } from './common/data-block/data-block.component';
 import { ButtonBlockComponent } from './common/button-block/button-block.component';
+import { ProductCardPreviewComponent } from './common/product-card-preview/product-card-preview.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ButtonBlockComponent } from './common/button-block/button-block.compone
     DataEditorComponent,
     DataBlockComponent,
     ButtonBlockComponent,
+    ProductCardPreviewComponent,
   ],
   imports: [
     HttpClientModule,

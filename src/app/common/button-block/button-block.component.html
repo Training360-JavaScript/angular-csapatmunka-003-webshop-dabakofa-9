@@ -1,5 +1,5 @@
-<button class="btn btn-info m-1">
-  <i class="fa fa-pencil"></i>
+<button class="btn btn-info m-1" [routerLink]="['/', 'preview', product.id]">
+  <i class="fa fa-eye"></i>
 </button>
 <button (click)="onSave(product)" class="btn btn-success m-1">
   <i class="fa fa-save"></i>

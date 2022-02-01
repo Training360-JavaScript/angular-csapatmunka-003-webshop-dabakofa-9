@@ -1,3 +1,4 @@
+import { ProductCardPreviewComponent } from './common/product-card-preview/product-card-preview.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminComponent,
+  },
+  {
+    path: 'preview/:id',
+    component: ProductCardPreviewComponent,
   },
   {
     path: '**',
