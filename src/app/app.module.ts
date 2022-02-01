@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { DataEditorComponent } from './common/data-editor/data-editor.component'
 import { DataBlockComponent } from './common/data-block/data-block.component';
 import { ButtonBlockComponent } from './common/button-block/button-block.component';
 import { ProductCardPreviewComponent } from './common/product-card-preview/product-card-preview.component';
+import { AddProductComponent } from './common/add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -42,12 +44,14 @@ import { ProductCardPreviewComponent } from './common/product-card-preview/produ
     DataBlockComponent,
     ButtonBlockComponent,
     ProductCardPreviewComponent,
+    AddProductComponent,
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
