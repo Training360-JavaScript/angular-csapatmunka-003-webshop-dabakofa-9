@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
 import {CategoryComponent} from "./page/category/category.component";
 import { AdminComponent } from './page/admin/admin.component';
+import { AddProductComponent } from './common/add-product/add-product.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'preview/:id',
     component: ProductCardPreviewComponent,
+  },
+  {
+    path: 'add',
+    component: AddProductComponent,
   },
   {
     path: '**',
